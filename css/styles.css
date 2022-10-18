@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     position: relative;
     background: rgb(239, 239, 248);
+    min-height: 100vh;
 }
 
 header {
@@ -18,14 +20,15 @@ header {
 header h1{
     margin-right: auto;
     padding-top: 10px;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 22px;
 }
 
 .user-search-bar {
     border: 2px solid rgb(194, 194, 194);
     border-radius: 5px;
     padding: 10px;
-    width: 25em;
+    width: auto;
 }
 
 .grid-container {
@@ -50,11 +53,28 @@ img {
     border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
     background: rgb(255, 250, 250);
+    width: auto;
+    height: 8.75em;
 }
 
 .card img {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 13px;
+}
+
+.text-container {
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.email, .address, .phone, .birthday {
+    font-weight: 300;
+    font-size: small;
+    color: rgb(143, 143, 143);
 }
 
 /************ Overlay ***************/
@@ -85,6 +105,7 @@ img {
     cursor: pointer;
     background: none;
     border: none;
+    font-weight: 500;
 }
 
 .text-container {
@@ -97,7 +118,12 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-text-container hr {
+    border: 1px solid rgb(227, 227, 227);
+    margin: 15px 0 15px 0
 }
 
 .hidden {
